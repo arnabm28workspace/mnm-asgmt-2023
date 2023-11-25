@@ -1,8 +1,6 @@
 @extends('layouts.app')
-@section('page', 'Home')
-@endsection
 @section('content')
-
+@section('page', 'Home')
 
 <!-- Main content -->
 <section class="content">

@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('content')
 @section('page', 'Blogs')
-@section('subpage', 'Create')
+@section('subpage', 'Edit')
 <!-- Main content -->
 <section class="content">
     <div class="container-fluid">
-      <form method="POST" action="{{ route('blogs.store') }}">
+      <form method="POST" action="{{ route('blogs.update', $id) }}">
         @csrf
       <div class="card-body">
         
@@ -13,8 +13,8 @@
             <div class="col-sm-12">
               <!-- text input -->
               <div class="form-group">
-                <label>Title <span>*</span></label>
-                <input type="text" name="title" class="form-control" maxlength="150" placeholder="Enter title ..." value="{{old('title')}}">
+                <label>Title</label>
+                <input type="text" name="title" class="form-control" maxlength="150" placeholder="Enter title ..." value="{{$data->title}}">
               </div>
               @error('title') <p class="small text-danger">{{ $message }}</p> @enderror
             </div>            
@@ -23,8 +23,8 @@
             <div class="col-sm-12">
               <!-- textarea -->
               <div class="form-group">
-                <label>Description <span>*</span></label>
-                <textarea class="form-control" name="description" rows="3" placeholder="Enter description...">{{old('description')}}</textarea>
+                <label>Description</label>
+                <textarea class="form-control" name="description" rows="3" placeholder="Enter description...">{{$data->description}}</textarea>
               </div>
               @error('description') <p class="small text-danger">{{ $message }}</p> @enderror
             </div>            
@@ -33,7 +33,7 @@
         
       </div>  
       <div class="card-footer">
-        <button type="submit" class="btn btn-success">Create</button>
+        <button type="submit" class="btn btn-success">Update</button>
         <a href="{{ route('blogs.list') }}" class="btn btn-danger">Back</a>
       </div>   
     </form> 
