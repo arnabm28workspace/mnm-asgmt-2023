@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -68,4 +68,17 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 =======
 # mnm-asgmt-2023
 Arnab Mukherjee Nov-2023 Assignment At Matrix Media Solutions Pvt Ltd
->>>>>>> c3ec5d8012719d9752cf18bdd817cdfb4b8efba4
+
+#### DEVELOPER'S COMMENT ####
+# STEPS TO BUILD #
+1) I installed a new Laravel application with version 9 as per my compatible system PHP version.
+2) I installed Composer into the application.
+3) I have create new .env file and setup initials.
+4) I have extracted a basic bootstrap theme for frontend and crop out as much i can for building required pages like login,register,list page, form page etc.
+5) I have created a blank databse in mysql.
+6) I have made migrations with required table schema and all relations between them which i needed.
+7) As per the requirement there a module "Blogs" with id,title,description,author columns and each blog have multiple comments from user.
+8) Create new blog, edit blog and list blogs with filtering and sorting by author and date.
+9) Each blog has adding comments area and view comments for a blog with author name, comment and timestamp.
+
+
